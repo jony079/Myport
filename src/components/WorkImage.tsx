@@ -6,6 +6,7 @@ interface Props {
   alt?: string;
   video?: string;
   link?: string;
+  badge?: string;
 }
 
 const WorkImage = (props: Props) => {
@@ -29,14 +30,21 @@ const WorkImage = (props: Props) => {
         onMouseEnter={handleMouseEnter}
         onMouseLeave={() => setIsVideo(false)}
         target="_blank"
+        rel="noreferrer"
         data-cursor={"disable"}
       >
+        {props.badge && (
+          <div className="work-3d-badge">
+            <span className="badge-dot"></span>
+            {props.badge}
+          </div>
+        )}
         {props.link && (
-          <div className="work-link">
+          <div className="work-link" title="Open Project Link">
             <MdArrowOutward />
           </div>
         )}
-        <img src={props.image} alt={props.alt} />
+        <img src={props.image} alt={props.alt || "3D Scientific Visualization"} loading="lazy" />
         {isVideo && <video src={video} autoPlay muted playsInline loop></video>}
       </a>
     </div>

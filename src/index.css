@@ -18,8 +18,12 @@
   user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
-  --accentColor: #c2a4ff;
-  --backgroundColor: #0b080c;
+  --accentColor: #00f0ff;
+  --accentSecondary: #38bdf8;
+  --accentGlow: rgba(0, 240, 255, 0.35);
+  --backgroundColor: #080d18;
+  --cardBg: rgba(13, 21, 38, 0.75);
+  --cardBorder: rgba(56, 189, 248, 0.2);
   --vh: 100vh;
   --vh: 100svh;
 }
@@ -58,7 +62,7 @@ main {
 body {
   margin: 0;
   height: auto;
-  background-color: #000;
+  background-color: #080d18;
   flex-grow: 1;
   --cWidth: calc(100% - 30px);
   --cMaxWidth: 1920px;
@@ -96,8 +100,8 @@ body {
   position: relative;
   height: var(--vh);
   margin: auto;
-  margin-top: 50px;
-  margin-bottom: -100px;
+  margin-top: 120px;
+  margin-bottom: 80px;
 }
 
 .techstack h2 {

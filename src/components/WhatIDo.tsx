@@ -25,7 +25,7 @@ const WhatIDo = () => {
     };
   }, []);
   return (
-    <div className="whatIDO">
+    <div className="whatIDO" id="what-i-do">
       <div className="what-box">
         <h2 className="title">
           W<span className="hat-h2">HAT</span>
@@ -58,6 +58,8 @@ const WhatIDo = () => {
               />
             </svg>
           </div>
+
+          {/* CARD 1: Computational Materials & DFT */}
           <div
             className="what-content what-noTouch"
             ref={(el) => setRef(el, 0)}
@@ -87,28 +89,26 @@ const WhatIDo = () => {
             <div className="what-corner"></div>
 
             <div className="what-content-in">
-              <h3>DEVELOP</h3>
-              <h4>Description</h4>
+              <h3>COMPUTATIONAL DFT</h3>
+              <h4>First-Principles Electronic Modeling</h4>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
-                quia aliquid laboriosam ducimus sit molestiae.
+                DFT calculations in Quantum ESPRESSO 7.5: SCF convergence, Ti3AlC2 MAX phases, bare Ti3C2 MXene slab relaxation (28 Å vacuum), and climbing-image NEB (CI-NEB) Na+ diffusion barrier evaluations.
               </p>
               <h5>Skillset & tools</h5>
               <div className="what-content-flex">
-                <div className="what-tags">JavaScript</div>
-                <div className="what-tags">TypeScript</div>
-                <div className="what-tags">Three.js</div>
-                <div className="what-tags">React</div>
-                <div className="what-tags">Css</div>
-                <div className="what-tags">Node.js</div>
-                <div className="what-tags">Next.js</div>
-                <div className="what-tags">Express.js</div>
-                <div className="what-tags">PHP</div>
-                <div className="what-tags">MySql</div>
+                <div className="what-tags">Quantum ESPRESSO</div>
+                <div className="what-tags">DFT</div>
+                <div className="what-tags">CI-NEB</div>
+                <div className="what-tags">pymatgen</div>
+                <div className="what-tags">Materials Project</div>
+                <div className="what-tags">VESTA</div>
+                <div className="what-tags">OVITO</div>
               </div>
               <div className="what-arrow"></div>
             </div>
           </div>
+
+          {/* CARD 2: Machine Learning & Alloy Design */}
           <div
             className="what-content what-noTouch"
             ref={(el) => setRef(el, 1)}
@@ -128,22 +128,57 @@ const WhatIDo = () => {
             </div>
             <div className="what-corner"></div>
             <div className="what-content-in">
-              <h3>DESIGN</h3>
-              <h4>Description</h4>
+              <h3>ML ALLOY DESIGN</h3>
+              <h4>Predictive Virtual Screening & Metallurgy</h4>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
-                quia aliquid laboriosam ducimus sit molestiae
+                Coupling gradient boosting regressors and Magpie atomic descriptors with metallurgical constraints to discover Re-free Fe-Ni superalloys (Pareto #3, ~6.8% lighter) and creep-resistant martensitic steels.
               </p>
               <h5>Skillset & tools</h5>
               <div className="what-content-flex">
-                <div className="what-tags">Blender</div>
-                <div className="what-tags">Zbrush</div>
-                <div className="what-tags">UI Design</div>
-                <div className="what-tags">Motion</div>
-                <div className="what-tags">Rigging</div>
-                <div className="what-tags">3D Animation</div>
-                <div className="what-tags">Character Design</div>
-                <div className="what-tags">Modelling</div>
+                <div className="what-tags">Python</div>
+                <div className="what-tags">Scikit-learn</div>
+                <div className="what-tags">Gradient Boosting</div>
+                <div className="what-tags">Magpie Descriptors</div>
+                <div className="what-tags">Pareto Screening</div>
+                <div className="what-tags">Metallurgy</div>
+              </div>
+              <div className="what-arrow"></div>
+            </div>
+          </div>
+
+          {/* CARD 3: Energy Storage & Batteries */}
+          <div
+            className="what-content what-noTouch"
+            ref={(el) => setRef(el, 2)}
+          >
+            <div className="what-border1">
+              <svg height="100%">
+                <line
+                  x1="0"
+                  y1="100%"
+                  x2="100%"
+                  y2="100%"
+                  stroke="white"
+                  strokeWidth="2"
+                  strokeDasharray="6,6"
+                />
+              </svg>
+            </div>
+            <div className="what-corner"></div>
+            <div className="what-content-in">
+              <h3>ENERGY STORAGE</h3>
+              <h4>Sodium-Ion Anodes & Biomass Upcycling</h4>
+              <p>
+                Engineering nitrogen-doped porous carbon (IP-NPC) from wheat flour to buffer cycling expansion. Closed-loop discovery workflows for defect-engineered Ti3C2Tx MXenes, SEI modeling, and Streamlit apps.
+              </p>
+              <h5>Skillset & tools</h5>
+              <div className="what-content-flex">
+                <div className="what-tags">Sodium-Ion Batteries</div>
+                <div className="what-tags">Biomass Upcycling</div>
+                <div className="what-tags">MXenes</div>
+                <div className="what-tags">SEI Modeling</div>
+                <div className="what-tags">Streamlit</div>
+                <div className="what-tags">Plotly</div>
               </div>
               <div className="what-arrow"></div>
             </div>

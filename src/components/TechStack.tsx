@@ -167,8 +167,8 @@ const TechStack = () => {
   }, []);
 
   return (
-    <div className="techstack">
-      <h2> My Techstack</h2>
+    <div className="techstack" id="techstack">
+      <h2>Technical <span style={{ color: "var(--accentColor)" }}>Skills</span></h2>
 
       <Canvas
         shadows
